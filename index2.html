@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/APlayer.min.css">
+    <div id="aplayer"></div>
+    <script src="js/APlayer.min.js"></script>
+    <script src="js/color-thief.js"></script>
+    <script type="text/javascript">
+    const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    theme: '#e9e9e9',
+    audio: [{
+      name: 'Koisuru Fortune Cookie/คุกกี้เสี่ยงทาย',
+      artist: 'BNK48',
+      url: '1.mp3',
+      cover: 'download.png'
+    }, {
+      name: 'ฺBNK48',
+      artist: 'BNK48',
+      url: '2.mp3',
+      cover: 'cover.jpg'
+    }]
+});
+
+const colorThief = new ColorThief();
+const setTheme = (index) => {
+    if (!ap.list.audios[index].theme) {
+        colorThief.getColorAsync(ap.list.audios[index].cover, function (color) {
+            ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+        });
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (data) => {
+    setTheme(data.index);
+});
+    </script>
+  </body>
+</html>
