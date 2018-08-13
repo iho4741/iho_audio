@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  width: 35%;
+  width: 100%;
   max-width: 720px;
   z-index: -1;
   display: block;
