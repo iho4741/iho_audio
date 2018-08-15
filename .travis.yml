@@ -11,7 +11,7 @@ os:
   # - osx
 before_script:
   - ruby -v
-  - bundle install --no-deployment
+  - bundle install 
 script:
   - bundle exec middleman build
 env:
