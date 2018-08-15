@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/iho4741/iho_audio.svg?branch=master)](https://travis-ci.org/iho4741/iho_audio)
 [![codecov](https://codecov.io/gh/iho4741/iho_audio/branch/master/graph/badge.svg)](https://codecov.io/gh/iho4741/iho_audio)
+[![Coverage Status](https://coveralls.io/repos/github/iho4741/iho_audio/badge.svg?branch=master)](https://coveralls.io/github/iho4741/iho_audio?branch=master)
 ![repo-size](https://github-size-badge.herokuapp.com/iho4741/iho_audio.svg)
 [![Github Issue](https://img.shields.io/github/issues-raw/iho4741/iho_audio/tracking.svg)](https://github.com/iho4741/iho_audio/issues)
 [![Website](https://img.shields.io/website-up-down-green-red/https/ihosomnam.com.svg?label=website-status)](https://ihosomnam.com)
