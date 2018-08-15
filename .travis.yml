@@ -10,7 +10,9 @@ rvm:
 os:
   - linux
   # - osx
+before_script:
+  - bundle install
 script:
-  - middleman build
+  - bundle exec middleman build
 notifications:
   email: false
