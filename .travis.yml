@@ -14,5 +14,7 @@ before_script:
   - bundle install
 script:
   - bundle exec middleman build
+env:
+  - CODECOV_TOKEN="13f0c9cb-6578-4281-b142-402106b16f2c"
 notifications:
   email: false
