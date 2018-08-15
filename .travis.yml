@@ -11,6 +11,7 @@ os:
   - linux
   # - osx
 before_script:
+  - bundle install
   - bundle update
 script:
   - bundle exec middleman build
