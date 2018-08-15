@@ -10,7 +10,7 @@ os:
   - linux
   # - osx
 before_script:
-  - bundle update --no-deployment
+  - bundle update
 script:
   - bundle exec middleman build
 env:
