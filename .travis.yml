@@ -10,6 +10,7 @@ os:
   - linux
   # - osx
 before_script:
+  - ruby -v
   - bundle install --no-deployment
 script:
   - bundle exec middleman build
